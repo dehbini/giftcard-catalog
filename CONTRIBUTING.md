@@ -46,4 +46,4 @@ The data stays vendor-neutral so anyone can depend on it.
 
 ## Not sure?
 
-Open a thread in [Discussions](https://github.com/dehbini/gift-card-catalog/discussions) before writing a PR. "Is this the right shape for X?" is a perfectly good first post.
+Open a thread in [Discussions](https://github.com/dehbini/giftcard-catalog/discussions) before writing a PR. "Is this the right shape for X?" is a perfectly good first post.

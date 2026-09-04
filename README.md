@@ -1,6 +1,6 @@
-# gift-card-catalog
+# giftcard-catalog
 
-[![CI](https://github.com/dehbini/gift-card-catalog/actions/workflows/ci.yml/badge.svg)](https://github.com/dehbini/gift-card-catalog/actions/workflows/ci.yml)
+[![CI](https://github.com/dehbini/giftcard-catalog/actions/workflows/ci.yml/badge.svg)](https://github.com/dehbini/giftcard-catalog/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/giftcard-catalog.svg)](https://www.npmjs.com/package/giftcard-catalog)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -19,7 +19,7 @@ npm install giftcard-catalog
 Or skip the package and just take the data:
 
 ```bash
-curl -O https://raw.githubusercontent.com/dehbini/gift-card-catalog/main/data/brands.json
+curl -O https://raw.githubusercontent.com/dehbini/giftcard-catalog/main/data/brands.json
 ```
 
 ## Usage
@@ -139,7 +139,7 @@ This is community-maintained reference data, not a contract. Denominations get a
 
 Adding a brand or a region is a single JSON edit. Run `npm test` before opening a PR; the validator will tell you exactly what's wrong.
 
-Questions, corrections, or a region you want covered? Open a thread in [Discussions](https://github.com/dehbini/gift-card-catalog/discussions).
+Questions, corrections, or a region you want covered? Open a thread in [Discussions](https://github.com/dehbini/giftcard-catalog/discussions).
 
 ## Roadmap
 

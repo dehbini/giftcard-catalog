@@ -52,10 +52,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dehbini/gift-card-catalog.git"
+    "url": "git+https://github.com/dehbini/giftcard-catalog.git"
   },
   "bugs": {
-    "url": "https://github.com/dehbini/gift-card-catalog/issues"
+    "url": "https://github.com/dehbini/giftcard-catalog/issues"
   },
-  "homepage": "https://github.com/dehbini/gift-card-catalog#readme"
+  "homepage": "https://github.com/dehbini/giftcard-catalog#readme"
 }

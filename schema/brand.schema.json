@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/dehbini/gift-card-catalog/main/schema/brand.schema.json",
+  "$id": "https://raw.githubusercontent.com/dehbini/giftcard-catalog/main/schema/brand.schema.json",
   "title": "Gift card catalog",
   "type": "object",
   "required": ["version", "updated", "brands"],
