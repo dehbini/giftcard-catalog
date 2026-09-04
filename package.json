@@ -1,0 +1,61 @@
+{
+  "name": "gift-card-catalog",
+  "version": "0.2.0",
+  "description": "Identify, validate and format digital gift card codes, plus an open catalog of brands, regions, denominations and region-lock rules. Zero dependencies.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./data": "./data/brands.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "data",
+    "schema"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "validate": "node scripts/validate.mjs",
+    "test": "npm run validate && node --test \"test/*.test.ts\"",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "gift-card",
+    "giftcard",
+    "gift-cards",
+    "dataset",
+    "region-lock",
+    "denominations",
+    "steam",
+    "playstation",
+    "xbox",
+    "app-store",
+    "digital-goods",
+    "ecommerce",
+    "typescript",
+    "code-validation",
+    "gift-card-codes",
+    "redemption"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dehbini/gift-card-catalog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dehbini/gift-card-catalog/issues"
+  },
+  "homepage": "https://github.com/dehbini/gift-card-catalog#readme"
+}

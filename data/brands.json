@@ -1,0 +1,673 @@
+{
+  "$schema": "../schema/brand.schema.json",
+  "version": "0.2.0",
+  "updated": "2026-09-04",
+  "disclaimer": "Community-maintained reference data. Denominations and redemption rules change often — always verify against the issuer before relying on this in production.",
+  "brands": [
+    {
+      "id": "steam",
+      "name": "Steam Wallet",
+      "publisher": "Valve",
+      "category": "gaming",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "store-currency",
+        "onMismatch": "rejected",
+        "note": "A Steam Wallet code can only be redeemed by an account whose store currency matches the code's currency. A USD code will not redeem on an EUR account.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://store.steampowered.com/account/redeemwalletcode",
+      "code": {
+        "lengths": [
+          15
+        ],
+        "groups": [
+          5,
+          5,
+          5
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            5,
+            10,
+            20,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "EU",
+          "currency": "EUR",
+          "denominations": [
+            5,
+            10,
+            20,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            5,
+            10,
+            20,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "TR",
+          "currency": "TRY",
+          "denominations": [
+            50,
+            100,
+            200,
+            500
+          ]
+        },
+        {
+          "code": "AE",
+          "currency": "AED",
+          "denominations": [
+            20,
+            50,
+            100,
+            200
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apple",
+      "name": "Apple Gift Card",
+      "publisher": "Apple",
+      "category": "app-store",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "account-country",
+        "onMismatch": "rejected",
+        "note": "Must match the country of the Apple Account. Apple merged the iTunes and Apple Store cards into a single Apple Gift Card in most regions.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://apps.apple.com/redeem",
+      "code": {
+        "lengths": [
+          16
+        ],
+        "groups": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "prefixes": [
+          "X"
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            15,
+            25,
+            50,
+            100,
+            200
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            10,
+            15,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "DE",
+          "currency": "EUR",
+          "denominations": [
+            15,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "TR",
+          "currency": "TRY",
+          "denominations": [
+            50,
+            100,
+            250,
+            500
+          ]
+        },
+        {
+          "code": "AE",
+          "currency": "AED",
+          "denominations": [
+            50,
+            100,
+            200,
+            500
+          ]
+        }
+      ]
+    },
+    {
+      "id": "playstation",
+      "name": "PlayStation Store Gift Card",
+      "publisher": "Sony Interactive Entertainment",
+      "category": "gaming",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "account-country",
+        "onMismatch": "rejected",
+        "note": "Redeemable only on a PSN account registered in the same country as the card.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://store.playstation.com/redeem",
+      "code": {
+        "lengths": [
+          12
+        ],
+        "groups": [
+          4,
+          4,
+          4
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            20,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            10,
+            20,
+            35,
+            50
+          ]
+        },
+        {
+          "code": "DE",
+          "currency": "EUR",
+          "denominations": [
+            10,
+            20,
+            25,
+            50
+          ]
+        },
+        {
+          "code": "TR",
+          "currency": "TRY",
+          "denominations": [
+            100,
+            200,
+            500
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox / Microsoft Gift Card",
+      "publisher": "Microsoft",
+      "category": "gaming",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "account-country",
+        "onMismatch": "rejected",
+        "note": "Tied to the Microsoft account's country and currency. Xbox Game Pass codes follow separate rules from stored-value cards.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://redeem.microsoft.com",
+      "code": {
+        "lengths": [
+          25
+        ],
+        "groups": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            15,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            10,
+            15,
+            25,
+            50
+          ]
+        },
+        {
+          "code": "EU",
+          "currency": "EUR",
+          "denominations": [
+            10,
+            15,
+            25,
+            50
+          ]
+        },
+        {
+          "code": "TR",
+          "currency": "TRY",
+          "denominations": [
+            100,
+            200,
+            500
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google-play",
+      "name": "Google Play Gift Card",
+      "publisher": "Google",
+      "category": "app-store",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "account-country",
+        "onMismatch": "rejected",
+        "note": "Only redeemable in the country where the card was issued, on a Google account with a matching billing country.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://play.google.com/redeem",
+      "code": {
+        "lengths": [
+          20
+        ],
+        "groups": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            15,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            10,
+            15,
+            25,
+            50
+          ]
+        },
+        {
+          "code": "TR",
+          "currency": "TRY",
+          "denominations": [
+            50,
+            100,
+            250
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon Gift Card",
+      "publisher": "Amazon",
+      "category": "retail",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "storefront",
+        "onMismatch": "rejected",
+        "note": "Marketplace-locked: an amazon.com balance cannot be spent on amazon.co.uk or amazon.de. Each marketplace is effectively a separate wallet.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://www.amazon.com/gc/redeem",
+      "code": {
+        "lengths": [
+          14
+        ],
+        "groups": [
+          4,
+          6,
+          4
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            25,
+            50,
+            100,
+            200
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            10,
+            25,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "DE",
+          "currency": "EUR",
+          "denominations": [
+            10,
+            25,
+            50,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix Gift Card",
+      "publisher": "Netflix",
+      "category": "streaming",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "account-country",
+        "onMismatch": "rejected",
+        "note": "Applies only to a Netflix account billed in the same country and currency as the card.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://www.netflix.com/redeem",
+      "code": {
+        "lengths": [
+          11
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            25,
+            30,
+            50,
+            100
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            25,
+            50
+          ]
+        },
+        {
+          "code": "TR",
+          "currency": "TRY",
+          "denominations": [
+            100,
+            200
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify Premium Gift Card",
+      "publisher": "Spotify",
+      "category": "streaming",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "account-country",
+        "onMismatch": "rejected",
+        "note": "Country-locked and cannot be applied to an account currently billed through a third party such as an app store or telecom operator.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://www.spotify.com/redeem",
+      "code": {
+        "lengths": [
+          16
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": true,
+      "expiryNote": "Some regional cards carry an activation deadline printed on the card.",
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            30,
+            60
+          ]
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            10,
+            30,
+            60
+          ]
+        },
+        {
+          "code": "EU",
+          "currency": "EUR",
+          "denominations": [
+            10,
+            30,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roblox",
+      "name": "Roblox Gift Card",
+      "publisher": "Roblox Corporation",
+      "category": "gaming",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "none",
+        "onMismatch": "value-differs",
+        "note": "Robux value is credited globally, but the Robux amount granted per unit of currency depends on the issuing region.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://www.roblox.com/redeem",
+      "code": {
+        "lengths": [
+          12
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            25,
+            50,
+            100
+          ],
+          "unit": "robux"
+        },
+        {
+          "code": "GB",
+          "currency": "GBP",
+          "denominations": [
+            10,
+            25,
+            50
+          ],
+          "unit": "robux"
+        }
+      ]
+    },
+    {
+      "id": "nintendo",
+      "name": "Nintendo eShop Card",
+      "publisher": "Nintendo",
+      "category": "gaming",
+      "deliveryType": "code",
+      "lock": {
+        "keyedOn": "account-country",
+        "onMismatch": "rejected",
+        "note": "Locked to the Nintendo Account's country. A US card will not redeem on a EU account.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://ec.nintendo.com/redeem",
+      "code": {
+        "lengths": [
+          16
+        ],
+        "verifiedAt": "2026-09-03"
+      },
+      "expires": false,
+      "regions": [
+        {
+          "code": "US",
+          "currency": "USD",
+          "denominations": [
+            10,
+            20,
+            35,
+            50
+          ]
+        },
+        {
+          "code": "EU",
+          "currency": "EUR",
+          "denominations": [
+            15,
+            25,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discord-nitro",
+      "name": "Discord Nitro",
+      "publisher": "Discord",
+      "category": "subscription",
+      "deliveryType": "gift-link",
+      "lock": {
+        "keyedOn": "none",
+        "onMismatch": "accepted",
+        "note": "Delivered as a gift URL rather than a stored-value code; redeemable by any account.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://discord.com/billing/promotions",
+      "expires": true,
+      "expiryNote": "Gift links typically expire if unclaimed within 48 hours.",
+      "regions": [
+        {
+          "code": "GLOBAL",
+          "currency": "USD",
+          "denominations": [
+            9.99,
+            99.99
+          ],
+          "unit": "subscription"
+        }
+      ]
+    },
+    {
+      "id": "telegram-premium",
+      "name": "Telegram Premium",
+      "publisher": "Telegram",
+      "category": "subscription",
+      "deliveryType": "account-topup",
+      "lock": {
+        "keyedOn": "none",
+        "onMismatch": "accepted",
+        "note": "Gifted directly to a username; no transferable code is issued.",
+        "verifiedAt": "2026-09-03"
+      },
+      "redeemUrl": "https://telegram.org/premium",
+      "expires": false,
+      "regions": [
+        {
+          "code": "GLOBAL",
+          "currency": "USD",
+          "denominations": [
+            3,
+            6,
+            12
+          ],
+          "unit": "months"
+        }
+      ]
+    }
+  ]
+}
