@@ -104,16 +104,10 @@
         "lengths": [
           16
         ],
-        "groups": [
-          4,
-          4,
-          4,
-          4
-        ],
         "prefixes": [
           "X"
         ],
-        "verifiedAt": "2026-09-03"
+        "verifiedAt": "2026-09-04"
       },
       "expires": false,
       "regions": [
@@ -194,7 +188,8 @@
           4,
           4
         ],
-        "verifiedAt": "2026-09-03"
+        "verifiedAt": "2026-09-04",
+        "source": "https://www.playstation.com/en-us/support/store/redeem-ps-store-voucher-code/"
       },
       "expires": false,
       "regions": [
@@ -264,7 +259,8 @@
           5,
           5
         ],
-        "verifiedAt": "2026-09-03"
+        "verifiedAt": "2026-09-04",
+        "source": "https://support.microsoft.com/en-us/accounts-billing/redeem-a-gift-card-or-code-to-your-microsoft-account"
       },
       "expires": false,
       "regions": [
@@ -325,16 +321,10 @@
       "redeemUrl": "https://play.google.com/redeem",
       "code": {
         "lengths": [
-          20
+          16
         ],
-        "groups": [
-          4,
-          4,
-          4,
-          4,
-          4
-        ],
-        "verifiedAt": "2026-09-03"
+        "verifiedAt": "2026-09-04",
+        "source": "https://support.google.com/googleplay/answer/3422659"
       },
       "expires": false,
       "regions": [
@@ -590,7 +580,8 @@
         "lengths": [
           16
         ],
-        "verifiedAt": "2026-09-03"
+        "verifiedAt": "2026-09-04",
+        "source": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/545/"
       },
       "expires": false,
       "regions": [
