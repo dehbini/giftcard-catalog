@@ -1,7 +1,7 @@
 # gift-card-catalog
 
 [![CI](https://github.com/dehbini/gift-card-catalog/actions/workflows/ci.yml/badge.svg)](https://github.com/dehbini/gift-card-catalog/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/%40dehbini%2Fgift-card-catalog.svg)](https://www.npmjs.com/package/@dehbini/gift-card-catalog)
+[![npm](https://img.shields.io/npm/v/giftcard-catalog.svg)](https://www.npmjs.com/package/giftcard-catalog)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Identify, validate and format digital gift card codes — plus an open, machine-readable catalog of the brands behind them: regions, currencies, denominations, and the region-lock rules that decide whether a code will actually redeem.
@@ -13,7 +13,7 @@ Zero dependencies. The data is plain JSON you can consume from any language.
 ## Install
 
 ```bash
-npm install @dehbini/gift-card-catalog
+npm install giftcard-catalog
 ```
 
 Or skip the package and just take the data:
@@ -25,7 +25,7 @@ curl -O https://raw.githubusercontent.com/dehbini/gift-card-catalog/main/data/br
 ## Usage
 
 ```ts
-import { detect, validate, format, canRedeem } from '@dehbini/gift-card-catalog';
+import { detect, validate, format, canRedeem } from 'giftcard-catalog';
 
 detect('XABC-DEFG-HJKL-MNPQ')[0];
 // → { brandId: 'apple', name: 'Apple Gift Card', complete: true, matchedOn: ['prefix', 'length'] }
